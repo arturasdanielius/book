@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('books', function (Blueprint $table) {
             $table->id();
             $table->string('title', 100);
-            $table->string('description', 400);
+            $table->string('description', 200);
             $table->unsignedSmallInteger('pages');
             $table->unsignedBigInteger('ISBN');
             $table->unsignedBigInteger('category_id');
