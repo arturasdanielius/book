@@ -17,13 +17,13 @@
                 <h4><b>Pages:</b> {{$book->pages}}</h4>
                 <h5><b>Description:</b><br> {{$book->description}}</h4>
                     <div>
-                        <a href="{{route('b_edit', $book)}}" class="btn btn-primary m-2">Edit</a>
+                        <a href="{{route('b_edit', $book)}}" class="btn btn-success m-2">Edit</a>
                         <form action="{{route('b_delete', $book)}}" method="post">
                             @csrf
                             @method('delete')
-                            <button type="submit" class="btn btn-primary m-2">DELETE</button>
+                            <button type="submit" class="btn btn-danger m-2">DELETE</button>
                         </form>
-                        <a href="{{route('b_show', $book)}}" class="btn btn-primary m-2">View</a>
+                        <a href="{{route('b_show', $book)}}" class="btn btn-warning m-2">View</a>
                     </div>
             </div>
         </div>

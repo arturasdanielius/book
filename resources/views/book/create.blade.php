@@ -55,9 +55,9 @@
                         </select>
                     </div>
                     @csrf
-                    <button type="submit" class="btn btn-secondary mt-4">Create</button>
+                    <button type="submit" class="btn btn-success mt-4">Create</button>
                 </form>
-                <a href="{{route('b_index')}}" class="btn btn-info">Back</a>
+                <a href="{{route('b_index')}}" class="btn btn-warning">Back</a>
             </div>
         </div>
     </div>
