@@ -55,5 +55,6 @@ class DatabaseSeeder extends Seeder
                 'created_at' => $time->addSeconds(1),
                 'updated_at' => $time,
             ]);
+        }
     }
 }
